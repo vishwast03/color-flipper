@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --main-bg-color: #F1F5F8;
+    --primary-color: dodgerblue;
+    --secondary-color: #222;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: var(--primary-color);
+}
+
+.toggle-options {
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.toggle-options div {
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.option-selected {
+    color: var(--primary-color);
+}
+
+.toggle-options div:hover {
+    color: var(--primary-color);
+}
+
+main {
+    width: 100vw;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+
+.container h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.color {
+    color: var(--primary-color);
+}
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    transition: background-color 0.4s ease,
+                color 0.4s ease;
+}
